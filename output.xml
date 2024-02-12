@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-12T20:01:35.631899" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\khali\projects\robot_and_faker\robot and faker\test.robot">
+<test id="s1-t1" name="Faker_profile" line="4">
+<kw name="Address" owner="FakerLibrary">
+<msg time="2024-02-12T20:01:35.868129" level="INFO">${address} = 15898 Gross Meadows Apt. 639
+Goldenbury, AL 46829</msg>
+<var>${address}</var>
+<doc>:example: '791 Crist Parks, Sashabury, IL 86039-9874'</doc>
+<status status="PASS" start="2024-02-12T20:01:35.868129" elapsed="0.000000"/>
+</kw>
+<kw name="Country" owner="FakerLibrary">
+<msg time="2024-02-12T20:01:35.868129" level="INFO">${country} = Svalbard &amp; Jan Mayen Islands</msg>
+<var>${country}</var>
+<status status="PASS" start="2024-02-12T20:01:35.868129" elapsed="0.000000"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2024-02-12T20:01:35.868129" level="INFO">${email} = xthompson@example.net</msg>
+<var>${email}</var>
+<status status="PASS" start="2024-02-12T20:01:35.868129" elapsed="0.000000"/>
+</kw>
+<kw name="First Name" owner="FakerLibrary">
+<msg time="2024-02-12T20:01:35.869146" level="INFO">${first_name} = Mark</msg>
+<var>${first_name}</var>
+<status status="PASS" start="2024-02-12T20:01:35.869146" elapsed="0.000000"/>
+</kw>
+<kw name="Last Name" owner="FakerLibrary">
+<msg time="2024-02-12T20:01:35.869146" level="INFO">${last_name} = Bowman</msg>
+<var>${last_name}</var>
+<status status="PASS" start="2024-02-12T20:01:35.869146" elapsed="0.000000"/>
+</kw>
+<kw name="Phone Number" owner="FakerLibrary">
+<msg time="2024-02-12T20:01:35.869146" level="INFO">${phone_number} = 325.469.5765x107</msg>
+<var>${phone_number}</var>
+<status status="PASS" start="2024-02-12T20:01:35.869146" elapsed="0.000000"/>
+</kw>
+<kw name="Catenate" owner="BuiltIn">
+<msg time="2024-02-12T20:01:35.870152" level="INFO">${profile} = 
+======================================= 
+first_name: Mark 
+last_name: Bowman 
+address: 15898 Gross Meadows Apt. 639
+Goldenbury, AL 46829 
+country: Svalbard &amp; Jan Mayen Islands 
+email: xthompson...</msg>
+<var>${profile}</var>
+<arg>${\n}=======================================</arg>
+<arg>${\n}first_name: ${first_name}</arg>
+<arg>${\n}last_name: ${last_name}</arg>
+<arg>${\n}address: ${address}</arg>
+<arg>${\n}country: ${country}</arg>
+<arg>${\n}email: ${email}</arg>
+<arg>${\n}phone_number: ${phone_number}</arg>
+<arg>${\n}=======================================</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="PASS" start="2024-02-12T20:01:35.869146" elapsed="0.001006"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${profile}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-02-12T20:01:35.870152" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-12T20:01:35.867094" elapsed="0.004073"/>
+</test>
+<status status="PASS" start="2024-02-12T20:01:35.632915" elapsed="0.239372"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
